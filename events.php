@@ -31,17 +31,20 @@
            				<p>Hello <?php echo $login_session;?>,</p>  					
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
-           </header>
-           
-           <nav>    
+           		
+           		<nav>    
                <ul>
-               	<li><a href="invitations.php">	My Invitations	</a></li>
-               	<li><a href="settings.php">	My Settings		</a></li>
-               	<li><a href="events.php">		My Events		</a></li>
-               	<li><a href="shopping.php">	My Shopping		</a></li>
-               	<li><a href="about.php">		About			</a></li>
+                <li><a href="invitations.php">  My Invitations  </a></li>
+                <li><a href="settings.php">     My Settings     </a></li>
+                <li><a href="events.php">       My Events       </a></li>
+                <li><a href="shopping.php">     My Shopping     </a></li>
+                <li><a href="about.php">        About           </a></li>
                </ul>
            </nav>
+           
+           </header>
+           
+           
            
            <main>
            	
