@@ -13,6 +13,7 @@
 		$cpassword = mysqli_real_escape_string($con, $_POST['cpassword']); //confirm password
 		$picture = $_FILES['file']['name'];
 	}
+	
 ?>
 
 <!DOCTYPE html>
@@ -55,9 +56,8 @@
            <main>
                <h1>My Settings</h1>
                <fieldset>
-               	<legend>
-               		Edit your personal Info
-               	</legend>
+               	<legend>Edit your personal Info</legend>
+               	<section id="settings">
                	<form action="" method="POST" enctype="multipart/form-data">
                		<p>
                			<label>First Name:</label>
@@ -89,9 +89,16 @@
                		</p>
                		<br>
 					<button type="submit" name="personal" class="submit" ></button>                		               		        
-               	</form>	
+               	</form>
+               	</section>
                </fieldset>
-               <p>Edit your Preferences</p>
+               <fieldset>
+               	<legend>Edit your Preferences</legend>
+               	<section id="settings"></section>
+               	<form action="" method="POSt" enctype="multipart/form-data">
+               		
+               	</form>
+               </fieldset>
                
                <article>
                    <section id="info">

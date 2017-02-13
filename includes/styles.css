@@ -124,11 +124,11 @@ h2{
 }
 
 section{
-	padding:5%;
+	padding:1%;
 }
 
 fieldset{
-	padding-top: 10%;
+	padding-top: 15%;
 }
 
 footer{
@@ -141,6 +141,11 @@ footer{
   	background:#4D2200;
 }
 
+legend{
+	font-size:30px;
+	padding-top:5px;
+}
+
 form p label{
 	position: absolute;
 }
@@ -150,12 +155,12 @@ form p input{
 }
 
 
-#login,#newEventName{
+#login,#newEventName,#settings{
 	font-size:25px;
 	display: inline-block;
 }
 
-#login input,#newEventName input{
+#login input,#newEventName input,#settings input{
 	font-size:25px;
 	height:30px;
 	width:250px;
