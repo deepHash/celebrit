@@ -186,9 +186,9 @@ form p input{
 
 /* Responsivity */
 
-@media only screen and (min-width:966px) and (max-width:1000px) {
-}
-@media only screen and (min-width:500px) and (max-width:966px) {
+
+@media only screen and (min-width:500px) and (max-width:980px) {
+    
 }
 @media only screen and (min-width:200px) and (max-width:500px) {
 
