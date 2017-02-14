@@ -25,6 +25,8 @@
         <meta charset="utf-8">
         <title>CELEBRIT:My Events</title>
         <link rel="stylesheet" href="includes/styles.css">
+        <script src="includes/friends.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
     <body>
@@ -55,9 +57,9 @@
            </nav>           
            <main>
                <h1>My Settings</h1>
+               <section id="settings">
                <fieldset>
-               	<legend>Edit your personal Info</legend>
-               	<section id="settings">
+               	<legend>Edit your personal Info</legend>               	
                	<form action="" method="POST" enctype="multipart/form-data">
                		<p>
                			<label>First Name:</label>
@@ -90,16 +92,16 @@
                		<br>
 					<button type="submit" name="personal" class="submit" ></button>                		               		        
                	</form>
-               	</section>
+               	
                </fieldset>
                <fieldset>
-               	<legend>Edit your Preferences</legend>
-               	<section id="settings">
-               	<form action="" method="POSt" enctype="multipart/form-data">
+               	<legend>Edit your Preferences</legend> 
+               	<form action="" method="post" enctype="multipart/form-data">
                		<p>
                			<label>Specific Event</label>
                			<br>
-               			<select>
+               			<!--write updateCheckBox function to select the type option and update the checkboxes -->
+               			<select name="eventType" id="eventType" onchange="return updateCheckBox();"> 
                				<?php while($row = mysqli_fetch_array($result)):;?>
                				<option><?php echo $row[2]; ?></option>
                				<?php endwhile;?>
@@ -116,13 +118,12 @@
                		<br>
                		<button type="submit" name="custom" class="submit"></button>
                	</form>
-               </section>
                </fieldset>
-               
-               <article>
-                   <section id="info">
-                   </section>   
-               </article>
+               <fieldset>
+               	<legend>Friends</legend>
+               	<div id="friendsList"></div>
+               </fieldset>
+              </section>
            </main>
            
 		</div>

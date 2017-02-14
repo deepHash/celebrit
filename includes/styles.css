@@ -158,8 +158,12 @@ form p label{
 	position: absolute;
 }
 
-form p input, form p select{
+form p input{
 	margin-left: 9em;
+}
+
+form p select{
+	margin-left: 4em;
 }
 
 
