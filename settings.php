@@ -3,6 +3,14 @@
 	//error flag
 	$error = false;
 	
+	//selectBox
+	$sql = "SELECT * FROM tbl_event_224 WHERE user_id = '$id_session' ";
+	$result = mysqli_query($con, $sql);
+	$options = "";
+	while ($row = mysqli_fetch_array($result)) {
+		$options = $options."<options>$row[2]</options>";
+	}
+	
 	//check for submission
 	if (isset($_POST['personal'])) {
 		$first_name = mysqli_real_escape_string($con, $_POST['first_name']);
@@ -12,20 +20,17 @@
 		$npassword = mysqli_real_escape_string($con, $_POST['npassword']); //new password
 		$cpassword = mysqli_real_escape_string($con, $_POST['cpassword']); //confirm password
 		$picture = $_FILES['file']['name'];
-	}
-	
+	}	
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-
         <title>CELEBRIT:My Events</title>
         <link rel="stylesheet" href="includes/styles.css">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
-
     <body>
    		<div class="wrapper">
            <header>     	
@@ -51,8 +56,7 @@
                	<li><a href="shopping.php">	My Shopping		</a></li>
                	<li><a href="about.php">		About			</a></li>
                </ul>
-           </nav>
-           
+           </nav>           
            <main>
                <h1>My Settings</h1>
                <fieldset>
@@ -94,17 +98,29 @@
                </fieldset>
                <fieldset>
                	<legend>Edit your Preferences</legend>
-               	<section id="settings"></section>
+               	<section id="settings">
                	<form action="" method="POSt" enctype="multipart/form-data">
-               		
+               		<p>
+               			<label>Specific Event</label>
+               			<select><?php echo $options;?></select>
+               		</p>
+               		<p>
+               			<label>Shopping</label>
+               			<input type="checkbox" name="shopping"/>
+               		</p>
+               		<p>
+               			<label>Coupons</label>
+               			<input type="checkbox" name="coupons" />
+               		</p>
+               		<br>
+               		<button type="submit" name="custom" class="submit"></button>
                	</form>
+               </section>
                </fieldset>
                
                <article>
                    <section id="info">
-
-                   </section>
-                   
+                   </section>   
                </article>
            </main>
            
