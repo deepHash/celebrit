@@ -31,50 +31,90 @@ html,body {
 	position:relative;
 }
 
-header{
-    position:fixed;
-	height:50px;
+/* header */
+header{ 
+	max-width:1000px;
+	height:150px;
 	padding-top:1%;
-	padding-bottom:1%;	
+	position:fixed;
+	top:0;
+	bottom:0;
+}
 
+.headSection{
+	width:1000px;
+	height:150px;
+	position:absolute;
+    top:10px;
+    background-color:white;
 }
 
 #logo{
 	width:250px;
 	position:absolute;
+	display:block;
 	left:0;
 }
 
 #face{
 	position:absolute;
+	display:block;
 	height:50px;
 	width:50px;	
 	right:155px;
 	border-radius: 50%;
+	right:50px;
 }
 
 .miniLogin{
 	width:200px;
 	position:absolute;
+	display:block;
 	padding:0 5px;
-	right:0;
+	right:40px;
 	font-size:20px;
 }
 
-.submit{
-	width:36px;
-	height:55px;
-	background-color:transparent;
-    background-image:url('../images/submit.png');
-    background-repeat: no-repeat;
-    display:inline;
-    border: none;
+/*Header - flyMenu*/
+#cpBtn{
+	position:absolute;
+	right: 20px;
+	width: 20px;
+	height: 25px;
+	background: linear-gradient(#FFF,#DDD);
+	border: #AAA 1px solid;
+	border-radius: 2px;
+	padding: 10px 10px;
+	cursor: pointer;
+	transition: border 0.3s linear 0s;
+	right:0;
 }
-
-.submit:hover{
-	background-image:url('../images/submit.gif');
+#cpBtn:hover{
+	border: #06F 1px solid;
 }
-
+#cpBtn:hover div{
+	background: #06F;
+}
+#cpBtn > div{
+	width: 30px;
+	height: 5px;
+	background: #4D2200;
+	margin: 3px -4px;
+	border-radius: 4px;
+	transition: background 0.3s linear 0s;
+}
+#cp{
+	position: fixed;
+	right:1%;
+	top: 50px;
+	width: 260px;
+	height: 400px;
+	background: #DDD;
+	opacity: 0;
+	transition: opacity 0.3s linear 0s, right 0s linear 0s;
+	cursor: pointer;
+}
+	
 nav{
 	left:0;
 	padding-top:60px;
@@ -91,9 +131,11 @@ nav ul li a{
 	font-size:29px;
 }
 
+/* menu */
 main{
 	height:100%;
 	padding-bottom:16px;
+	padding-top:152px;
 }
 
 main p{
@@ -154,7 +196,6 @@ form p input{
 	margin-left: 9em;
 }
 
-
 #login,#newEventName,#settings{
 	font-size:25px;
 	display: inline-block;
@@ -164,6 +205,20 @@ form p input{
 	font-size:25px;
 	height:30px;
 	width:250px;
+}
+
+.submit{
+	width:36px;
+	height:55px;
+	background-color:transparent;
+    background-image:url('../images/submit.png');
+    background-repeat: no-repeat;
+    display:inline;
+    border: none;
+}
+
+.submit:hover{
+	background-image:url('../images/submit.gif');
 }
 
 #newEventType{

@@ -38,18 +38,28 @@
         <link rel="stylesheet" href="includes/styles.css">
         <!-- favi icon -->
 		<link rel="icon" type="image/ico" href="images/favicon.ico">
-
+		<script src="includes/scripts.js" type="text/javascript"></script>
+		
     </head>
 
     <body>
    		<div class="wrapper">
-           <header>     	
+           <header>
+           <div class="headSection">     	
             <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
             <img id="face" src="images/guest.png" alt="guest"></img>
             	<section class="miniLogin">
            				<p>Hello,Guest</p>  					
            				<p><a href="index.php"> Login </a></p>
            		</section>
+           	
+           	<div id="cpBtn" onclick="toggleCP()">
+  				<div></div>
+  				<div></div>
+  				<div></div>
+			</div>
+			<div id="cp"> some interesting info here </div>	
+			</div>
            </header>
            <main>
                <h1>Login</h1>
