@@ -6,10 +6,6 @@
 	//selectBox
 	$sql = "SELECT * FROM tbl_event_224 WHERE user_id = '$id_session' ";
 	$result = mysqli_query($con, $sql);
-	$options = "";
-	while ($row = mysqli_fetch_array($result)) {
-		$options = $options."<options>$row[2]</options>";
-	}
 	
 	//check for submission
 	if (isset($_POST['personal'])) {
@@ -102,7 +98,12 @@
                	<form action="" method="POSt" enctype="multipart/form-data">
                		<p>
                			<label>Specific Event</label>
-               			<select><?php echo $options;?></select>
+               			<br>
+               			<select>
+               				<?php while($row = mysqli_fetch_array($result)):;?>
+               				<option><?php echo $row[2]; ?></option>
+               				<?php endwhile;?>
+               			</select>
                		</p>
                		<p>
                			<label>Shopping</label>

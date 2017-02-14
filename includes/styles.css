@@ -146,6 +146,14 @@ legend{
 	padding-top:5px;
 }
 
+select{
+	display: inline-block; //not in inlineblock
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-weight: bold;
+	height: 34px;
+	width: 240px;
+}
 form p label{
 	position: absolute;
 }
@@ -160,7 +168,7 @@ form p input, form p select{
 	display: inline-block;
 }
 
-#login input,#newEventName input,#settings input,#settings select{
+#login input,#newEventName input,#settings input{
 	font-size:25px;
 	height:30px;
 	width:250px;
