@@ -108,13 +108,11 @@ header{
 	transition: background 0.3s linear 0s;
 }
 #cp{
-	position: fixed;
-	right:1%;
+	position: absolute;
 	top: 50px;
 	width: 260px;
 	height: 400px;
 	background: #DDD;
-	opacity: 0;
 	transition: opacity 0.3s linear 0s, right 0s linear 0s;
 	cursor: pointer;
 }
