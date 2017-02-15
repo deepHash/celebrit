@@ -19,7 +19,8 @@
 
      <body>
    		<div class="wrapper">
-           <header>     	
+           <header>
+           	<div class="headSection">     	         	
             <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
              <?php if($profile_session == NULL){
 						echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";             	
@@ -32,6 +33,13 @@
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
            		
+           	<div id="cpBtn" onclick="toggleCP()">
+  				<div></div>
+  				<div></div>
+  				<div></div>
+			</div>
+			<div id="cp"> some interesting info here </div>	
+			
            		<nav>    
                <ul>
                 <li><a href="invitations.php">  My Invitations  </a></li>
@@ -41,7 +49,7 @@
                 <li><a href="about.php">        About           </a></li>
                </ul>
            </nav>
-           
+           </div>
            </header>
            
            

@@ -34,7 +34,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>CELEBRIT:My Events login</title>
+        <title>CELEBRIT:Login</title>
         <link rel="stylesheet" href="includes/styles.css">
         <!-- favi icon -->
 		<link rel="icon" type="image/ico" href="images/favicon.ico">
