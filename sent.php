@@ -17,8 +17,20 @@
 
      <body>
    		<div class="wrapper">
-   			
-                      <header>
+           <main>
+               <h1>Sent Invitation</h1>
+
+               <article>
+                   <section id="sent">
+						<p>Your invitation was sent.</p>
+                   </section>
+                   
+               </article>
+               
+               <a href="events.php"><button><p>back</p></button></a>
+           </main>
+           
+           <header>
            	<div class="headSection">     	         	
             <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
              <?php if($profile_session == NULL){
@@ -50,31 +62,7 @@
            </nav>
            </div>
           </header>
-           
-           <nav>    
-               <ul>
-               	<li><a href="invitations.php">	My Invitations	</a></li>
-               	<li><a href="settings.php">	My Settings		</a></li>
-               	<li><a href="events.php">		My Events		</a></li>
-               	<li><a href="shopping.php">	My Shopping		</a></li>
-               	<li><a href="about.php">		About			</a></li>
-               </ul>
-           </nav>
-           
-           <main>
-           	
-               <h1>Sent Invitation</h1>
-
-               <article>
-                   <section id="sent">
-						<p>Your invitation was sent.</p>
-                   </section>
-                   
-               </article>
-               
-               <a href="events.php"><button><p>back</p></button></a>
-           </main>
-           
+          
 		</div>
 		<footer>© 2017 - All Rights Reserved</footer>
     </body>

@@ -74,13 +74,6 @@
 
     <body>
    		<div class="wrapper">
-   			
-           <header>
-           <div class="headSection">     	
-            <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
-			</div>
-           </header>
-           
            <main>
                <h1>Register</h1>
                <p>Please fill the following details to register to CELEBRIT</p>           
@@ -127,6 +120,12 @@
                    
                </fieldset>
            </main>
+           
+           <header>
+           <div class="headSection">     	
+            <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
+			</div>
+           </header>
            
 		</div>
 		<footer>© 2017 - All Rights Reserved</footer>

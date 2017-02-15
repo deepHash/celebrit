@@ -44,23 +44,7 @@
 
     <body>
    		<div class="wrapper">
-           <header>
-           <div class="headSection">     	
-            <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
-            <img id="face" src="images/guest.png" alt="guest"></img>
-            	<section class="miniLogin">
-           				<p>Hello,Guest</p>  					
-           				<p><a href="index.php"> Login </a></p>
-           		</section>
-           	
-           	<div id="cpBtn" onclick="toggleCP()">
-  				<div></div>
-  				<div></div>
-  				<div></div>
-			</div>
-			<div id="cp"> some interesting info here </div>	
-			</div>
-           </header>
+           
            <main>
                <h1>Login</h1>
                <p>Please login to see your events</p>
@@ -80,6 +64,24 @@
                    
                </article>
            </main>
+           
+           <header>
+           <div class="headSection">     	
+            <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
+            <img id="face" src="images/guest.png" alt="guest"></img>
+            	<section class="miniLogin">
+           				<p>Hello,Guest</p>  					
+           				<p><a href="index.php"> Login </a></p>
+           		</section>
+           	
+           	<div id="cpBtn" onclick="toggleCP()">
+  				<div></div>
+  				<div></div>
+  				<div></div>
+			</div>
+			<div id="cp"> some interesting info here </div>	
+			</div>
+           </header>
            
 		</div>
 		<footer>© 2017 - All Rights Reserved</footer>
