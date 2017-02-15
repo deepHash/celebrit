@@ -12,16 +12,6 @@
 
     <body>
    		<div class="wrapper">
-           <header>
-           <div class="headSection">     	
-            <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
-            <img id="face" src="images/guest.png" alt="guest"></img>
-            	<section class="miniLogin">
-           				<p>Hello,Guest</p>  					
-           				<p><a href="index.php"> Login </a></p>
-           		</section>
-			</div>
-           </header>
            
            <main>
                <h1>Login</h1>
@@ -42,6 +32,17 @@
                    
                </article>
            </main>
+           
+           <header>
+           <div class="headSection">     	
+            <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
+            <img id="face" src="images/guest.png" alt="guest"></img>
+            	<section class="miniLogin">
+           				<p>Hello,Guest</p>  					
+           				<p><a href="index.php"> Login </a></p>
+           		</section>
+			</div>
+           </header>
            
 		</div>
 		<footer>© 2017 - All Rights Reserved</footer>

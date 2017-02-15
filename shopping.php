@@ -7,15 +7,33 @@
     <head>
         <meta charset="utf-8">
 
-        <title>CELEBRIT:My Events</title>
+        <title>CELEBRIT:My Shopping</title>
         <link rel="stylesheet" href="includes/styles.css">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
 
     <body>
    		<div class="wrapper">
-   			
-            <header>
+			<main>
+               <h1>My Shopping</h1>
+               <p>Shop near your location</p>
+               
+               <article>
+                   <section id="shopping">
+                   	<a href="http://www.ampm.co.il/map/"><img src="images/ampmlogo.png"></img></a>
+                   	</p>
+                   	<iframe src="http://www.ampm.co.il/map/" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+                   	
+                   	<br>
+                   	<a href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shufersalLogo.png"></img></a>
+                   	</p>
+                   	<iframe src="http://www.shufersal.co.il/Pages/Catalog.aspx" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+                   </section>
+                   
+               </article>
+           </main>
+           
+                       <header>
            	<div class="headSection">     	         	
             <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
              <?php if($profile_session == NULL){
@@ -47,26 +65,7 @@
            		</nav>
            </div>
           </header>
-           
-           <main>
-               <h1>My Shopping</h1>
-               <p>Shop near your location</p>
-               
-               <article>
-                   <section id="shopping">
-                   	<a href="http://www.ampm.co.il/map/"><img src="images/ampmlogo.png"></img></a>
-                   	</p>
-                   	<iframe src="http://www.ampm.co.il/map/" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
-                   	
-                   	<br>
-                   	<a href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shufersalLogo.png"></img></a>
-                   	</p>
-                   	<iframe src="http://www.shufersal.co.il/Pages/Catalog.aspx" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
-                   </section>
-                   
-               </article>
-           </main>
-           
+          
 		</div>
 		<footer>© 2017 - All Rights Reserved</footer>
     </body>

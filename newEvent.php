@@ -7,9 +7,7 @@
     <head>
     	
         <meta charset="utf-8">
-
-        <title>CELEBRIT:new Event</title>
-     
+        <title>CELEBRIT:New Event</title>
 		<script src="includes/scripts.js"></script>
    		<link rel="stylesheet" href="includes/styles.css">
    		<link rel="icon" type="image/ico" href="images/favicon.ico">
@@ -19,62 +17,27 @@
      <body>
    		<div class="wrapper">
    			
-           <header>
-           	<div class="headSection">     	         	
-            <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
-             <?php if($profile_session == NULL){
-						echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";             	
-             		} else {
-             			echo "<img id='face' src='images/profiles/".$profile_session."' alt='profile picture'>";
-             		}
-			 ?>		 
-            	<section class="miniLogin">
-           				<p>Hello <?php echo $login_session;?>,</p>  					
-           				<p><a href="logout.php"> Logout </a></p>
-           		</section>
-           		
-           	<div id="cpBtn" onclick="toggleCP()">
-  				<div></div>
-  				<div></div>
-  				<div></div>
-			</div>
-			<div id="cp"> some interesting info here </div>	
-			
-           		<nav>    
-               <ul>
-                <li><a href="invitations.php">  My Invitations  </a></li>
-                <li><a href="settings.php">     My Settings     </a></li>
-                <li><a href="events.php">       My Events       </a></li>
-                <li><a href="shopping.php">     My Shopping     </a></li>
-                <li><a href="about.php">        About           </a></li>
-               </ul>
-           </nav>
-           </div>
-          </header>
-           
            <main>
-           	
                <h1>New Event</h1>
-
-               <article>
-               	
+               <article>          	
                    <section id="newEventName">
                    	<p><label>Event Name: </label><input type="text" required name="eventName" value="" placeholder="Event Name"></p>
                    </section>
 
                    <section id="newEventType">
-  							<li class="active"><a href="#"> Type </a></li>
+  							<li><a href="#"> 	Type 		</a></li>
   							<li><a href="#">	Party		</a></li>
   							<li><a href="#">	Birthday	</a></li>
   							<li><a href="#">	Celebration	</a></li>
   							<li><a href="#">	Wedding		</a></li>
   							<li><a href="#">	Other		</a></li>
-  							<li class="active"><a href="#"> Location </a></li>
-  							<li><a href="#"> Indoor		</a></li>
-  							<li><a href="#"> Outdoor	</a></li>
-  							<li><a href="#"> Public		</a></li>
-  							<li><a href="#"> Private	</a></li>
-  							<li><a href="#"> VIP		</a></li>
+  							-----------------------------------------
+  							<li><a href="#"> 	Location 	</a></li>
+  							<li><a href="#"> 	Indoor		</a></li>
+  							<li><a href="#"> 	Outdoor		</a></li>
+  							<li><a href="#"> 	Public		</a></li>
+  							<li><a href="#"> 	Private		</a></li>
+  							<li><a href="#"> 	VIP			</a></li>
                    </section>
 
 <h2>Guests</h2>
@@ -141,6 +104,48 @@ Bring snacks and drinks!
                <a href=" sent.php"><button><p>Send</p></button></a>
            </main>
            
+           <header>
+           	<div class="headSection">     	         	
+            <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
+             <?php if($profile_session == NULL){
+						echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";             	
+             		} else {
+             			echo "<img id='face' src='images/profiles/".$profile_session."' alt='profile picture'>";
+             		}
+			 ?>		 
+            	<section class="miniLogin">
+           				<p>Hello <?php echo $login_session;?>,</p>  					
+           				<p><a href="logout.php"> Logout </a></p>
+           		</section>
+           		
+           	<div id="cpBtn" onclick="toggleCP()">
+  				<div></div>
+  				<div></div>
+  				<div></div>
+			</div>
+			<div id="cp">
+				<ul>
+                <li><a href="#newEventName">  		Name			</a></li>
+                <li><a href="#newEventGuests">  	Guests			</a></li>
+                <li><a href="#newEventMap">  		Location		</a></li>
+                <li><a href="#newEventTime">  		Date &amp; Time	</a></li>
+                <li><a href="#newEventShop">  		Shopping		</a></li>
+                <li><a href="#newEventInvite">  	Invitation		</a></li>
+               </ul>
+             </div>	
+			
+           		<nav>    
+               <ul>
+                <li><a href="invitations.php">  My Invitations  </a></li>
+                <li><a href="settings.php">     My Settings     </a></li>
+                <li><a href="events.php">       My Events       </a></li>
+                <li><a href="shopping.php">     My Shopping     </a></li>
+                <li><a href="about.php">        About           </a></li>
+               </ul>
+           </nav>
+           </div>
+          </header>
+          
 		</div>
 		<footer>© 2017 - All Rights Reserved</footer>
     </body>    	
