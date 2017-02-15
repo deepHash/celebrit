@@ -12,24 +12,16 @@
 
     <body>
    		<div class="wrapper">
-           <header>     	
-            <a href="index.html" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
+           <header>
+           <div class="headSection">     	
+            <a href="index.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
             <img id="face" src="images/guest.png" alt="guest"></img>
             	<section class="miniLogin">
            				<p>Hello,Guest</p>  					
-           				<p><a href="index.html"> Login </a></p>
+           				<p><a href="index.php"> Login </a></p>
            		</section>
+			</div>
            </header>
-           
-           <nav>    
-               <ul>
-               	<li><a href="invitations.html">	My Invitations	</a></li>
-               	<li><a href="settings.html">	My Settings		</a></li>
-               	<li><a href="events.html">		My Events		</a></li>
-               	<li><a href="shopping.html">	My Shopping		</a></li>
-               	<li><a href="about.html">		About			</a></li>
-               </ul>
-           </nav>
            
            <main>
                <h1>Login</h1>

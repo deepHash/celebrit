@@ -23,7 +23,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CELEBRIT:My Events</title>
+
+        <title>CELEBRIT:My Settings</title>
+
         <link rel="stylesheet" href="includes/styles.css">
         <script src="includes/settings.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -31,29 +33,40 @@
     </head>
     <body>
    		<div class="wrapper">
-           <header>     	
+   			
+           <header>
+           	<div class="headSection">     	         	
             <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
-            <?php if($profile_session == NULL){
+             <?php if($profile_session == NULL){
 						echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";             	
              		} else {
              			echo "<img id='face' src='images/profiles/".$profile_session."' alt='profile picture'>";
              		}
-			 ?>
+			 ?>		 
             	<section class="miniLogin">
            				<p>Hello <?php echo $login_session;?>,</p>  					
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
+           		
+           	<div id="cpBtn" onclick="toggleCP()">
+  				<div></div>
+  				<div></div>
+  				<div></div>
+			</div>
+			<div id="cp"> some interesting info here </div>	
+			
+           		<nav>    
+               		<ul>
+                		<li><a href="invitations.php">  My Invitations  </a></li>
+                		<li><a href="settings.php">     My Settings     </a></li>
+                		<li><a href="events.php">       My Events       </a></li>
+                		<li><a href="shopping.php">     My Shopping     </a></li>
+                		<li><a href="about.php">        About           </a></li>
+               		</ul>
+           		</nav>
+           </div>
            </header>
            
-           <nav>    
-               <ul>
-               	<li><a href="invitations.php">	My Invitations	</a></li>
-               	<li class="currentPage"><a href="settings.php">	My Settings		</a></li>
-               	<li><a href="events.php">		My Events		</a></li>
-               	<li><a href="shopping.php">	My Shopping		</a></li>
-               	<li><a href="about.php">		About			</a></li>
-               </ul>
-           </nav>           
            <main>
                <h1>My Settings</h1>
                <section id="settings">

@@ -14,29 +14,37 @@
 
     <body>
    		<div class="wrapper">
-           <header>     	
-            <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
-            <?php if($profile_session == NULL){
-						echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";             	
-             		} else {
-             			echo "<img id='face' src='images/profiles/".$profile_session."' alt='profile picture'>";
-             		}
-			 ?>
+   			
+                               <header>
+           	<div class="headSection">     	         	
+            <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo">
+                        
+             <?php if($profile_session == NULL){echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";} 
+                        else {echo "<img id='face' src='images/profiles/".$profile_session."' alt='profile picture'>";}
+              ?>		 
             	<section class="miniLogin">
            				<p>Hello <?php echo $login_session;?>,</p>  					
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
-           </header>
-           
+           		
+           	<div id="cpBtn" onclick="toggleCP()">
+  				    <div></div>
+  				    <div></div>
+  			    	<div></div>
+			      </div>
+			      <div id="cp"> some interesting info here </div>	
+			
            <nav>    
                <ul>
-               	<li class="currentPage"><a href="invitations.php">	My Invitations	</a></li>
-               	<li><a href="settings.php">	My Settings		</a></li>
-               	<li><a href="events.php">		My Events		</a></li>
-               	<li><a href="shopping.php">	My Shopping		</a></li>
-               	<li><a href="about.php">		About			</a></li>
+                <li><a href="invitations.php">  My Invitations  </a>
+                <li><a href="settings.php">     My Settings     </a>
+                <li><a href="events.php">       My Events       </a>
+                <li><a href="shopping.php">     My Shopping     </a>
+                <li><a href="about.php">        About           </a>
                </ul>
            </nav>
+              </div>
+              </header>
            
            <main>
                <h1>My Invitations</h1>
