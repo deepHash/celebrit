@@ -33,7 +33,7 @@
                	<li><a href="settings.php">	My Settings		</a></li>
                	<li><a href="events.php">		My Events		</a></li>
                	<li><a href="shopping.php">	My Shopping		</a></li>
-               	<li><a href="about.php">		About			</a></li>
+               	<li class="currentPage"><a href="about.php">		About			</a></li>
                </ul>
            </nav>
            

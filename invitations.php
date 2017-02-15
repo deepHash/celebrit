@@ -30,7 +30,7 @@
            
            <nav>    
                <ul>
-               	<li><a href="invitations.php">	My Invitations	</a></li>
+               	<li class="currentPage"><a href="invitations.php">	My Invitations	</a></li>
                	<li><a href="settings.php">	My Settings		</a></li>
                	<li><a href="events.php">		My Events		</a></li>
                	<li><a href="shopping.php">	My Shopping		</a></li>
@@ -44,35 +44,35 @@
                <article>
                    <section id="myInvitations">
 					<table class="tg">
-  <tr>
-    <th class="tg-2bn0">Occasion</th>
-    <th class="tg-2bn0">Guests</th>
-    <th class="tg-2bn0">Location</th>
-    <th class="tg-2bn0">Time &amp; Date</th>
-    <th class="tg-2bn0">Shopping List</th>
-  </tr>
-  <tr>
-    <td class="tg-2bn0">House Party</td>
-    <td class="tg-2bn0">3</td>
-    <td class="tg-2bn0">Your House</td>
-    <td class="tg-2bn0">18:00</td>
-    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
-  </tr>
-  <tr>
-    <td class="tg-2bn0">Outdoor Party</td>
-    <td class="tg-2bn0">4</td>
-    <td class="tg-2bn0">Yarkon</td>
-    <td class="tg-2bn0">19:30</td>
-    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
-  </tr>
-  <tr>
-    <td class="tg-2bn0">Disco Party</td>
-    <td class="tg-2bn0">10</td>
-    <td class="tg-2bn0">Moses</td>
-    <td class="tg-2bn0">21:00</td>
-    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
-  </tr>
-</table>
+					  <tr>
+					    <th class="tg-2bn0">Occasion</th>
+					    <th class="tg-2bn0">Guests</th>
+					    <th class="tg-2bn0">Location</th>
+					    <th class="tg-2bn0">Time &amp; Date</th>
+					    <th class="tg-2bn0">Shopping List</th>
+					  </tr>
+					  <tr>
+					    <td class="tg-2bn0">House Party</td>
+					    <td class="tg-2bn0">3</td>
+					    <td class="tg-2bn0">Your House</td>
+					    <td class="tg-2bn0">18:00</td>
+					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					  </tr>
+					  <tr>
+					    <td class="tg-2bn0">Outdoor Party</td>
+					    <td class="tg-2bn0">4</td>
+					    <td class="tg-2bn0">Yarkon</td>
+					    <td class="tg-2bn0">19:30</td>
+					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					  </tr>
+					  <tr>
+					    <td class="tg-2bn0">Disco Party</td>
+					    <td class="tg-2bn0">10</td>
+					    <td class="tg-2bn0">Moses</td>
+					    <td class="tg-2bn0">21:00</td>
+					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					  </tr>
+					</table>
                    </section>
                    
                </article>

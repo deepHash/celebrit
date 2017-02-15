@@ -118,6 +118,7 @@ header{
 	transition: opacity 0.3s linear 0s, right 0s linear 0s;
 	cursor: pointer;
 }
+/* nav */
 	
 nav{
 	left:0;
@@ -133,6 +134,11 @@ nav ul li{
 
 nav ul li a{
 	font-size:29px;
+}
+
+.currentPage{
+	text-decoration: underline;
+	
 }
 
 /* menu */
@@ -255,6 +261,9 @@ form p select{
 	display:block;
 }
 
+#friendsList{
+	font-size: 25px;
+}
 .error{
     font-size:20px;
     color:#ce3333;

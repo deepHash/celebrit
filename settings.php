@@ -25,7 +25,7 @@
         <meta charset="utf-8">
         <title>CELEBRIT:My Events</title>
         <link rel="stylesheet" href="includes/styles.css">
-        <script src="includes/friends.js" type="text/javascript"></script>
+        <script src="includes/settings.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
@@ -44,12 +44,11 @@
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
            </header>
-           </header>
            
            <nav>    
                <ul>
                	<li><a href="invitations.php">	My Invitations	</a></li>
-               	<li><a href="settings.php">	My Settings		</a></li>
+               	<li class="currentPage"><a href="settings.php">	My Settings		</a></li>
                	<li><a href="events.php">		My Events		</a></li>
                	<li><a href="shopping.php">	My Shopping		</a></li>
                	<li><a href="about.php">		About			</a></li>
