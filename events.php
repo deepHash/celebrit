@@ -19,7 +19,6 @@
 
      <body>
    		<div class="wrapper">
-           
            <main>
                <h1>My Events</h1>
                <article>
@@ -52,7 +51,6 @@
 								?>
 					</table>
                    </section>
-                   
                </article>
                
                <a href="newEvent.php"><button><p>Create New Event</p></button></a>
