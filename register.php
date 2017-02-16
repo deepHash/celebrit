@@ -79,29 +79,29 @@
                <p>Please fill the following details to register to CELEBRIT</p>           
                <fieldset>
                    <section id="login">
-					<form action="" method="post" name="register" enctype="multipart/form-data">
+					<form id="registerForm" action="" method="post" name="register" enctype="multipart/form-data">
 						<p>
-							<label>First Name*</label>
+							<label>First Name<span class="redStar">*</span></label>
 							<input type="text" name="first_name" required value="<?php if ($error) echo $first_name; ?>" />
 							<span class="error"><? if (isset($firstName_error)) echo $firstName_error; ?></span>	
 						</p>
 						<p>
-							<label>Last Name*</label>
+							<label>Last Name<span class="redStar">*</span></label>
 							<input type="text" name="last_name" required value="<?php if ($error) echo $last_name; ?>" />
 							<span class="error"><? if (isset($lastName_error)) echo $lastName_error; ?></span>	
 						</p>
 						<p>
-							<label>Email*</label>
+							<label>Email<span class="redStar">*</span></label>
 							<input type="text" name="email" required value="<?php if ($error) echo $email; ?>" />
 							<span class="error"><? if (isset($email_error)) echo $email_error; ?></span>	
 						</p>
 						<p>
-							<label>Password*</label>
+							<label>Password<span class="redStar">*</span></label>
 							<input type="password" name="password"/>
 							<span class="error"><? if (isset($password_error)) echo $password_error; ?></span>	
 						</p>
 						<p>
-							<label>Confirm Password*</label>
+							<label>Confirm Password<span class="redStar">*</span></label>
 							<input type="password" name="cpassword" />
 							<span class="error"><? if (isset($cpassword_error)) echo $cpassword_error; ?></span>	
 						</p>
@@ -111,7 +111,7 @@
 							<span class="error"><? if (isset($picture_error)) echo $picture_error; ?></span>
 						</p>
 						<br>
-						<button type="submit" name="signup" class="submit" ></button>
+						<input type="submit" name="signup"></input>
 
 					</form>
 					<?php if (isset($successmsg)) { echo $successmsg; } ?>

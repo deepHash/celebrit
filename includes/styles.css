@@ -179,7 +179,7 @@ section{
 }
 
 fieldset{
-	padding-top: 15%;
+	padding-top: 5%;
 }
 
 footer{
@@ -263,6 +263,44 @@ form p select{
 #friendsList{
 	font-size: 25px;
 }
+/* register page */
+
+#registerForm input[type=submit]{
+        display: block;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 3px 5px 12px 3px rgba(0, 0, 0, 0.25);
+        color: white;
+        font-size: 20px;
+        background: #795548;
+        width: 487px;
+        height: 40px;
+        transition: background linear 0.4s;
+}
+
+#registerForm input[type=submit]:hover{
+	    transition: background linear 0.4s;
+        background: #6C4C40;	
+}
+
+#registerForm input[type=text] {
+	border-radius: 1px;
+}
+
+#registerForm input[type=password] {
+	border-radius: 1px;
+}
+
+#registerForm input[type=file] {
+	font-size: 20px;
+	padding-left: 2.2em;
+}
+
+.redStar{
+	color:#FF0000;
+}
+
 .error{
     font-size:20px;
     color:#ce3333;

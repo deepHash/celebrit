@@ -76,7 +76,7 @@
 			
            		<nav>    
                <ul>
-                <li><a href="invitations.php">  My Invitations  </a></li>
+                <li class="currentPage"><a href="invitations.php">  My Invitations  </a></li>
                 <li><a href="settings.php">     My Settings     </a></li>
                 <li><a href="events.php">       My Events       </a></li>
                 <li><a href="shopping.php">     My Shopping     </a></li>
