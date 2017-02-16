@@ -6,6 +6,8 @@
 	//selectBox
 	$sql = "SELECT * FROM tbl_event_224 WHERE user_id = '$id_session' ";
 	$result = mysqli_query($con, $sql);
+	$rightPass = mysqli_num_rows($result);
+
 	
 	//check for submission
 	if (isset($_POST['personal'])) {
@@ -16,6 +18,53 @@
 		$npassword = mysqli_real_escape_string($con, $_POST['npassword']); //new password
 		$cpassword = mysqli_real_escape_string($con, $_POST['cpassword']); //confirm password
 		$picture = $_FILES['file']['name'];
+		
+		//password value
+		$sql = "SELECT * FROM tbl_user_224 WHERE id = '$id_session' AND password = '".md5($mypassword)."'";
+		$password_result = mysqli_query($con, $sql);
+			 
+		//name can contain only alphabet characters
+		if (!preg_match("/^[a-zA-Z ]+$/",$first_name)) {
+			$error = true;
+			$firstName_error = "Name must contain only alphabet characters";
+		}
+		if (!preg_match("/^[a-zA-Z ]+$/",$last_name)) {
+		    $error = true;
+		    $lastName_error = "Last name must contain only alphabet letters";
+		}
+		if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+		    $error = true;
+		    $email_error = "Please enter a valid eMail";
+		}
+		if($rightPass != 1){
+			$error = true;
+			$opassword_error = "Wrong password, please try again";
+		}
+		if(strlen($npassword) < 4) {
+		    $error = true;
+		    $npassword_error = "Password must be minimum of 4 characters";
+		}
+		if($password != $cpassword) {
+		    $error = true;
+		    $cpassword_error = "Password and Confirm Password doesn't match";
+		}
+		if($_FILES['file']['size'] > 500000){
+			$error = true;
+			$picture_error = "The file size is too large must be under 500KB";
+		}
+		if (!$error) {
+		   if ($picture){
+		    	move_uploaded_file($_FILES['file']['tmp_name'],"images/profiles/".$picture);
+				$sql = "INSERT INTO tbl_users_224(username,first_name,last_name,password,profile) VALUES('" . $email . "', '" . $first_name . "', '" . $last_name . "', '" . md5($password) . "','". $picture ."')";
+		    } else{
+		    	$sql = "INSERT INTO tbl_users_224(username,first_name,last_name,password) VALUES('" . $email . "', '" . $first_name . "', '" . $last_name . "', '" . md5($password) . "')";	
+		    }
+		    if(mysqli_query($con, $sql)) {
+		        $successmsg = "Successfully Registered! <a href='index.php'>Click here to Login</a>";
+		    } else {
+		        $errormsg = "Error in registering...Please try again later!";
+		    }
+		 }
 	}	
 ?>
 
