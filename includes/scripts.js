@@ -70,11 +70,5 @@ $(function() {
 // flyMenu
 function toggleCP(){
 	var cp = document.getElementById("cp");
-	if(cp.style.opacity == 1){
-		cp.style.opacity = 0;
-		cp.style.right = "-260px"; // remove it from active screen space
-	} else {
-		cp.style.right = "0px"; // return it to active screen space
-		cp.style.opacity = 1;
-	}
+	cp.style.display = cp.style.display === 'block' ? 'none' : 'block';
 }
