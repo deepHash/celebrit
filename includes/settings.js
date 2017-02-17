@@ -1,14 +1,11 @@
 window.onload = function(){
 	var friendsList = document.getElementById("friendsList");
 	var request = new XMLHttpRequest();
-	if(request.readyState == 4){
-		request.open('GET', 'includes/kaktus.json');
+		request.open('GET', 'data/json/kaktus.json');
 		request.onload = function () {
 	  		var myData = JSON.parse(request.responseText);
 	  		renderHTML(myData);
 		};
-	}
-
 	request.send();
 };
 

@@ -37,9 +37,9 @@
            	<div class="headSection">     	         	
             <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
              <?php if($profile_session == NULL){
-						echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";             	
+						echo "<img id='face' src='data/profiles/default.png' alt='default profile'>";             	
              		} else {
-             			echo "<img id='face' src='images/profiles/".$profile_session."' alt='profile picture'>";
+             			echo "<img id='face' src='data/profiles/".$profile_session."' alt='profile picture'>";
              		}
 			 ?>		 
             	<section class="miniLogin">

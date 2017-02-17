@@ -44,8 +44,11 @@
 				$picture_error = "The file size is too large must be under 500KB";
 			}
 		    if (!$error) {
+		    	$fp = fopen("data/json/".$email.".json", "w");
+				fwrite($fp, "");
+				fclose($fp);
 		    	if ($picture){
-		    		move_uploaded_file($_FILES['file']['tmp_name'],"images/profiles/".$picture);
+		    		move_uploaded_file($_FILES['file']['tmp_name'],"data/profiles/".$picture);
 					$sql = "INSERT INTO tbl_users_224(username,first_name,last_name,password,profile) VALUES('" . $email . "', '" . $first_name . "', '" . $last_name . "', '" . md5($password) . "','". $picture ."')";
 		    	} else{
 		    		$sql = "INSERT INTO tbl_users_224(username,first_name,last_name,password) VALUES('" . $email . "', '" . $first_name . "', '" . $last_name . "', '" . md5($password) . "')";	
