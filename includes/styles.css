@@ -31,6 +31,11 @@ html,body {
 	position:relative;
 }
 
+.wrapper > main > a > button:hover{
+	transition: background linear 0.4s;
+    background: #fafafa;
+}
+
 /* header */
 header{ 
 	max-width:1000px;
@@ -309,9 +314,15 @@ form p select{
 
 /* shoppping modal*/
 
-#myBtn1,#myBtn2,#myBtn3{
+.myBtn{
 	width:50px;
 }
+.myBtn:hover{
+	transition: background linear 0.4s;
+    background: #fafafa;
+}
+
+
 
 /* The Modal (background) */
 .Mmodal {

@@ -41,7 +41,7 @@
 										echo "<td class='tg-2bn0'>".$row['guests']."</td>";
 										echo "<td class='tg-2bn0'>".$row['location']."</td>";
 										echo "<td class='tg-2bn0'>".$row['date']."</td>";
-										echo "<td class='tg-2bn0'><button id="myBtn1"><img src="images/shop.png"></img></button></td>";
+										echo "<td class='tg-2bn0'><button class='myBtn'><img src='images/shop.png'></img></button></td></td>";
 										echo "</tr>";
 								}//end loop
 									
@@ -52,7 +52,7 @@
 					</table>
                    </section>
                </article>
-               				<div id="myModal" class="Mmodal">
+							<div id="myModal" class="Mmodal">
 								<div class="modal-content">
 									<span id="close">&times;</span><p>Your Shopping List:</p>
 									<table class="tg">
