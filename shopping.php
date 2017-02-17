@@ -9,6 +9,7 @@
 
         <title>CELEBRIT:My Shopping</title>
         <link rel="stylesheet" href="includes/styles.css">
+        <script src="includes/scripts.js" type="text/javascript"></script>
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
 

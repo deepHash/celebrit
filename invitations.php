@@ -31,7 +31,15 @@
 					    <td class="tg-2bn0">3</td>
 					    <td class="tg-2bn0">Your House</td>
 					    <td class="tg-2bn0">18:00</td>
-					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					    <td class="tg-2bn0"><button id="myBtn">Open Modal<img src="images/shop.png"></button>
+					    	<!-- The Modal -->
+							<div id="myModal" class="modal">
+							<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close">&times;</span><p>Some text in the Modal..</p>
+								</div>
+							</div>
+					    </td>
 					  </tr>
 					  <tr>
 					    <td class="tg-2bn0">Outdoor Party</td>
