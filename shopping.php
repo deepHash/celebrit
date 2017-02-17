@@ -16,18 +16,18 @@
    		<div class="wrapper">
 			<main>
                <h1>My Shopping</h1>
-               <p>Shop near your location</p>
+               <p>Shop near your location - Enjoy a daily coupon</p>
                
                <article>
                    <section id="shopping">
                    	<a href="http://www.ampm.co.il/map/"><img src="images/ampmlogo.png"></img></a>
-                   	</p>
-                   	<iframe src="http://www.ampm.co.il/map/" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
-                   	
-                   	<br>
+                   	<p>Your Dily Coupon:</p>	<p>"CELEBRIT123"</p> <br>
                    	<a href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shufersalLogo.png"></img></a>
-                   	</p>
-                   	<iframe src="http://www.shufersal.co.il/Pages/Catalog.aspx" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+                   	<p>Your Dily Coupon:</p>	<p>"CELEBRIT123"</p> <br>
+                   	<a href="http://www.benedict.co.il/en/"><img src="images/benedicLogo.png"></img></a>
+                   	<p>Your Dily Coupon:</p>	<p>"CELEBRIT123"</p> <br>
+                   	<a href="https://www.mosesrest.co.il"><img src="images/mozesLogo.png"></img></a>
+                   	<p>Your Dily Coupon:</p>	<p>"CELEBRIT123"</p> <br>
                    </section>
                    
                </article>
@@ -52,7 +52,9 @@
   				<div></div>
   				<div></div>
 			</div>
-			<div id="cp"> some interesting info here </div>	
+			<div id="cp">
+                   	<p>Your Dily Coupon:</p> <p>"CELEBRIT123"</p>
+			</div>	
 			
            		<nav>    
                		<ul>
