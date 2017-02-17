@@ -9,6 +9,7 @@
         <title>CELEBRIT:My Invitations</title>
         <link rel="stylesheet" href="includes/styles.css">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <script src="includes/scripts.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -31,14 +32,13 @@
 					    <td class="tg-2bn0">3</td>
 					    <td class="tg-2bn0">Your House</td>
 					    <td class="tg-2bn0">18:00</td>
-					    <td class="tg-2bn0"><button id="myBtn">Open Modal<img src="images/shop.png"></button>
-					    	<!-- The Modal -->
-							<div id="myModal" class="modal">
-							<!-- Modal content -->
+					    <td class="tg-2bn0"><button id="myBtn"><img src="images/shop.png"></img>
+					    	<div id="myModal" class="Mmodal">
 								<div class="modal-content">
-									<span class="close">&times;</span><p>Some text in the Modal..</p>
+									<span class="close">&times;</span><p>Your Shopping List:</p>
 								</div>
 							</div>
+					    </button>	
 					    </td>
 					  </tr>
 					  <tr>
@@ -46,18 +46,29 @@
 					    <td class="tg-2bn0">4</td>
 					    <td class="tg-2bn0">Yarkon</td>
 					    <td class="tg-2bn0">19:30</td>
-					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					    <td class="tg-2bn0"><button id="myBtn"><img src="images/shop.png"></img>
+					    	<div id="myModal" class="Mmodal">
+								<div class="modal-content">
+									<span class="close">&times;</span><p>Your Shopping List:</p>
+								</div>
+							</div>
+					    </button></td>
 					  </tr>
 					  <tr>
 					    <td class="tg-2bn0">Disco Party</td>
 					    <td class="tg-2bn0">10</td>
 					    <td class="tg-2bn0">Moses</td>
 					    <td class="tg-2bn0">21:00</td>
-					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					    <td class="tg-2bn0"><button id="myBtn"><img src="images/shop.png"></img>
+					    	<div id="myModal" class="Mmodal">
+								<div class="modal-content">
+									<span class="close">&times;</span><p>Your Shopping List:</p>
+								</div>
+							</div>
+					    </button></td>
 					  </tr>
 					</table>
                    </section>
-                   
                </article>
            </main>
            

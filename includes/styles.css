@@ -309,11 +309,15 @@ form p select{
 
 /* shoppping modal*/
 
+#myBtn{
+	width:50px;
+}
+
 /* The Modal (background) */
-.modal {
+.Mmodal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+   	z-index:1;
     left: 0;
     top: 0;
     width: 100%; /* Full width */

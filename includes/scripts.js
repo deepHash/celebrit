@@ -1,23 +1,5 @@
-$(document).ready(function() {
-	$('.popup-with-form').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#name',
-
-		// When elemened is focused, some mobile browsers in some cases zoom in
-		// It looks not nice, so we disable it:
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
-	});
-});
-
+window.onload = function(){ 
+    // your code 
 
 // flyMenu toggle
 function toggleCP(){
@@ -28,15 +10,15 @@ function toggleCP(){
 
 // modal:
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
 
-// When the user clicks on the button, open the modal 
+// When the user clicks the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -52,3 +34,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+};
