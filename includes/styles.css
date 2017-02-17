@@ -309,7 +309,7 @@ form p select{
 
 /* shoppping modal*/
 
-#myBtn{
+#myBtn1,#myBtn2,#myBtn3{
 	width:50px;
 }
 
@@ -337,14 +337,14 @@ form p select{
 }
 
 /* The Close Button */
-.close {
+#close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,.close:focus {
+#close:hover,#close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
