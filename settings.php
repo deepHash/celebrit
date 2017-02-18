@@ -72,7 +72,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>CELEBRIT:My Settings</title>
         <link rel="stylesheet" href="includes/styles.css">
         <script src="includes/settings.js" type="text/javascript"></script>

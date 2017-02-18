@@ -12,7 +12,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>CELEBRIT:About</title>
         <link rel="stylesheet" href="includes/styles.css">
         <script src="includes/scripts.js" type="text/javascript"></script>
@@ -39,17 +39,15 @@
                    		
                    			<form method="post" action="mailer.php" name="mail" id="contactForm">
 									<p><label>Your Name:</label>
-									<input  id="field" type="text" 	name="name"  id="name" 	placeholder="name" value="<?php if ($error) echo $first_name; ?>">
+									<input  id="field" type="text" 	name="name" value="<?php if ($error) echo $first_name; ?>">
 									<span class="error"><? if (isset($firstName_error)) echo $firstName_error; ?></span>
 			</p><br>
 									<p><label>Email:</label></p>
-									<input id="field" type="text" 	name="email"  id="email" 	placeholder="mail" value="<?php if ($error) echo $email; ?>">
+									<input id="field" type="text" name="email" value="<?php if ($error) echo $email; ?>">
 									<span class="error"><? if (isset($email_error)) echo $email_error; ?></span>	
 			</p><br>
-									<p><label>Please choose type for the message:</label>
-				<br>
-									<select id="field" name="issue" form="form1">
-			</p><br>
+									<p><label>Issue Type:</label>					
+									<select id="field" name="issue" form="contactForm">
 										<option name="issue" id="issue" value="an Error">			Error		</option>
 										<option name="issue" id="issue" value="a Malfunction">		Malfunction	</option>
 										<option name="issue" id="issue" value="an Advice">			Advice		</option>
@@ -58,9 +56,9 @@
 									</select>
 			</p><br>					
 									<p><label>Your message:</label>
-									<input id="field" type="text" 	name="subject"  id="subject" 	placeholder="subject" value="subject">
-			</p><br>
-									<input style="height:25%;width:80%;top:0px;margin-bottom:-20px;" type="text" 	name="message"  id="message">
+									<input id="field" type="text" 	name="subject" placeholder="subject" value="subject">
+			</p>
+									<input type="text" 	name="message"  id="message">
 			</p><br>
 									<input type=submit value="Send"></input>
 							</form>

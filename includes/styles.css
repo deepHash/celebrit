@@ -362,6 +362,16 @@ form p select {
 	cursor: pointer;
 }
 
+input#message{
+	height:300px;
+	width:600px;
+}
+
+select#field{
+	margin-left: 14em;
+	width:100px;
+}
+
 /* Responsivity */
 
 @media only screen and (min-width: 480px) and (max-width: 980px) {

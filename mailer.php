@@ -31,7 +31,7 @@ mail("itsesisx@gmail.com", $subject, $txt ,$headers);
 <html lang="en">
     <head>
         <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>CELEBRIT:Sent contact us</title>
         <script type="text/javascript" src="includes/jquery-3.1.0.min.js"></script> 
 		<script src="includes/scripts.js"></script>
