@@ -197,6 +197,10 @@ legend {
 }
 
 select {
+<<<<<<< HEAD
+=======
+	display: inline-block;//not in inlineblock
+>>>>>>> 4985c82743170e7a831e9cddfdee3e5916b967f9
 	border: 1px solid #ccc;
 	font-size: 16px;
 	font-weight: bold;
@@ -213,7 +217,11 @@ form p input {
 }
 
 form p select {
+<<<<<<< HEAD
 	margin-left: 40%;
+=======
+	margin-left: 4em;
+>>>>>>> 4985c82743170e7a831e9cddfdee3e5916b967f9
 }
 
 #login, #newEventName, #settings {
@@ -263,7 +271,11 @@ form p select {
 }
 /* register page */
 
+<<<<<<< HEAD
 #registerForm input[type=submit],#contactForm input[type=submit], #changeInfo input[type=submit], #changePreference input[type=submit]{
+=======
+#registerForm input[type=submit],#contactForm input[type=submit]{
+>>>>>>> 4985c82743170e7a831e9cddfdee3e5916b967f9
 	display: block;
 	border: none;
 	border-radius: 5px;
@@ -277,7 +289,11 @@ form p select {
 	transition: background linear 0.4s;
 }
 
+<<<<<<< HEAD
 #registerForm input[type=submit]:hover ,#contactForm input[type=submit]:hover, #changeInfo input[type=submit]:hover, #changePreference input[type=submit]:hover{
+=======
+#registerForm input[type=submit]:hover ,#contactForm input[type=submit]:hover{
+>>>>>>> 4985c82743170e7a831e9cddfdee3e5916b967f9
 	transition: background linear 0.4s;
 	background: #6C4C40;
 }
@@ -313,6 +329,7 @@ form p select {
 	color: #ce3333;
 	text-align: center;
 }
+<<<<<<< HEAD
 
 /* shoppping modal*/
 
@@ -379,6 +396,76 @@ select#field{
 	
 }
 
+=======
+
+/* shoppping modal*/
+
+.myBtn {
+	width: 50px;
+}
+.myBtn:hover {
+	transition: background linear 0.4s;
+	background: #fafafa;
+}
+
+/* The Modal (background) */
+.Mmodal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#close:hover, #close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+input#message{
+	height:300px;
+	width:600px;
+}
+
+select#field{
+	margin-left: 14em;
+	width:100px;
+}
+
+/* Responsivity */
+
+@media only screen and (min-width: 480px) and (max-width: 980px) {
+}
+@media only screen and (max-width: 480px) {
+	nav {
+		diplay: none;
+	}
+}
+
+>>>>>>> 4985c82743170e7a831e9cddfdee3e5916b967f9
 @viewport {
 width:980px;
 zoom:1.5;

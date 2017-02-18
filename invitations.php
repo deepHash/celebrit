@@ -6,6 +6,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>CELEBRIT:My Invitations</title>
         <link rel="stylesheet" href="includes/styles.css">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
@@ -82,7 +83,7 @@
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
            		
-           	<div id="cpBtn" onclick="toggleCP()">
+           	<div id="cpBtn">
   				<div></div>
   				<div></div>
   				<div></div>
