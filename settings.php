@@ -24,7 +24,7 @@
 		$password_result = mysqli_query($con, $sql);
 			 
 		//name can contain only alphabet characters
-		if (!preg_match("/^[a-zA-Z ]+$/",$first_name)) {
+		if (!preg_match("/^[a-zA-Z ]+$/",$first_name) && $first_name!="") {
 			$error = true;
 			$firstName_error = "Name must contain only alphabet characters";
 		}
@@ -74,12 +74,13 @@
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>CELEBRIT:My Settings</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" href="includes/styles.css">
+        <script type="text/javascript">var username = "<?= $user_check ?>";</script>
         <script src="includes/settings.js" type="text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="includes/scripts.js" type="text/javascript"></script> 
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
-    
     <body>
    		<div class="wrapper">
            <main>
@@ -87,7 +88,7 @@
                <section id="settings">
                <fieldset>
                	<legend>Edit your personal Info</legend>               	
-               	<form action="" method="POST" enctype="multipart/form-data">
+               	<form id="changeInfo" action="" method="POST" enctype="multipart/form-data">
                		<p>
                			<label>First Name:</label>
                			<input type="text" name="first_name"/>
@@ -126,7 +127,6 @@
                	<form action="" method="post" enctype="multipart/form-data">
                		<p>
                			<label>Specific Event</label>
-               			<br>
                			<!--write updateCheckBox function to select the type option and update the checkboxes -->
                			<select name="eventType" id="eventType" onchange="return updateCheckBox();"> 
                				<?php while($row = mysqli_fetch_array($result)):;?>
@@ -136,20 +136,17 @@
                		</p>
                		<p>
                			<label>Shopping</label>
-               			<input type="checkbox" name="shopping"/>
+               			<input type="checkbox" id="shopping"/>
                		</p>
                		<p>
                			<label>Coupons</label>
-               			<input type="checkbox" name="coupons" />
+               			<input type="checkbox" id="coupons" />
                		</p>
                		<br>
                		<button type="submit" name="custom" class="submit"></button>
                	</form>
                </fieldset>
-               <fieldset>
-               	<legend>Friends</legend>
-               	<div id="friendsList"></div>
-               </fieldset>
+
               </section>
            </main>
            
