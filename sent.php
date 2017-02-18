@@ -6,14 +6,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-
+		<meta name="viewport" content="width=device-width,initial-scale=1">
         <title>CELEBRIT:Sent Invitation</title>
         <script type="text/javascript" src="includes/jquery-3.1.0.min.js"></script> 
 		<script src="includes/scripts.js"></script>
    		<link rel="stylesheet" href="includes/styles.css">
 		<link rel="icon" type="image/ico" href="images/favicon.ico">
-
-         </head>
+    </head>
 
      <body>
    		<div class="wrapper">

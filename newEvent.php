@@ -5,13 +5,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    	
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>CELEBRIT:New Event</title>
 		<script src="includes/scripts.js"></script>
    		<link rel="stylesheet" href="includes/styles.css">
    		<link rel="icon" type="image/ico" href="images/favicon.ico">
-   		
     </head>
 
      <body>
