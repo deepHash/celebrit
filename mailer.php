@@ -5,28 +5,25 @@ include('session.php');
 	$error = false;
 	
 	//
-		//check for submission
-	if (isset($_POST['personal'])) {
-		$first_name = mysqli_real_escape_string($con, $_POST['name']);
-		$email = mysqli_real_escape_string($con, $_POST['email']);
-	}
+
 		
 // The message
 $name = $_POST["name"];
-$relation = $_POST["issue"];
+$issue = $_POST["issue"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 $headers = "From: $email\r\n";
 $headers .= "Content-type: text/html\r\n";
-$txt = 'From: ' . $name . ' on the topic of ' . $relation . '  , in Celebrit Web-Site. ' . "\n" .
-'you can write them back at:' . $email . "<p></p>\n" . '  .the message is:   ' . $message;
+$txt = 'From: ' . $name . ' on the topic of ' . $issue . '  , in Celebrit Web-Site. ' . "\n" .
+'you can write them back at:' . $email . "<p></p>\n" . '  the message is:   ' . $message;
 
 $subject = $_POST["subject"];
 // In case any of our lines are larger than 70 characters, we should use wordwrap()
 $txt = wordwrap($txt, 70, "\r\n");
 //mail to:
 // Send
-mail("sergrom@gmail.com&cc=itsesisx@gmail.com", $subject, $txt ,$headers);
+mail("sergrom@gmail.com", $subject, $txt ,$headers);
+mail("itsesisx@gmail.com", $subject, $txt ,$headers);
 ?>
 
 

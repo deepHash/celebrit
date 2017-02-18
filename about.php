@@ -1,5 +1,12 @@
 <?php
 	include('session.php');
+	
+			//check for submission
+	if (isset($_POST['personal'])) {
+		$first_name = mysqli_real_escape_string($con, $_POST['first_name']);
+		$email = mysqli_real_escape_string($con, $_POST['email']);
+	}
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +15,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
         <title>CELEBRIT:About</title>
         <link rel="stylesheet" href="includes/styles.css">
+        <script src="includes/scripts.js" type="text/javascript"></script>
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
 
@@ -16,7 +24,7 @@
            <main>
                <h1>About</h1>
                <article>
-                   <section id="login">
+                   <section>
                    		<p>Welcome To CELEBRIT</p>
                    		<p>CELEBRIT is a site created for Shenkar</p>
                    		<p>HCI and Web App Dev Courses by Yonit Rusho</p>
@@ -25,31 +33,35 @@
                			<p>Igal Tsesis - itsesisx@gmail.com</p>
                    </section>
                    
-                   <section id="contact">
-                   		<h2></h2>Contact Us</h2>
+                   <h2>Contact Us</h2>
+                   <section id="login">
                    		<p>CELEBRIT is always improving - give us your tips and advice</p>
                    		
-                   			<form method="post" action="mailer.php" name="mail" id="form1">
-									Your Name:
-									<input  id="field" type="text" 	name="name"  id="name" 	placeholder="name" value="name">
-									Email:
-									<input id="field" type="text" 	name="email"  id="email" 	placeholder="mail" value="mail">
-			<br>
-									Please choose a topic for the message:
+                   			<form method="post" action="mailer.php" name="mail" id="contactForm">
+									<p><label>Your Name:</label>
+									<input  id="field" type="text" 	name="name"  id="name" 	placeholder="name" value="<?php if ($error) echo $first_name; ?>">
+									<span class="error"><? if (isset($firstName_error)) echo $firstName_error; ?></span>
+			</p><br>
+									<p><label>Email:</label></p>
+									<input id="field" type="text" 	name="email"  id="email" 	placeholder="mail" value="<?php if ($error) echo $email; ?>">
+									<span class="error"><? if (isset($email_error)) echo $email_error; ?></span>	
+			</p><br>
+									<p><label>Please choose type for the message:</label>
+				<br>
 									<select id="field" name="issue" form="form1">
-			<br>
+			</p><br>
 										<option name="issue" id="issue" value="an Error">			Error		</option>
 										<option name="issue" id="issue" value="a Malfunction">		Malfunction	</option>
 										<option name="issue" id="issue" value="an Advice">			Advice		</option>
 										<option name="issue" id="issue" value="a Tip">				a Tip		</option>
 										<option name="issue" id="issue" value="a Thank you note">	Thank you	</option>
 									</select>
-			<br>					
-									Your message:
-									<input id="field" type="text" 	name="subject"  id="subject" 	placeholder="נושא" value="נושא">
-			<br>
+			</p><br>					
+									<p><label>Your message:</label>
+									<input id="field" type="text" 	name="subject"  id="subject" 	placeholder="subject" value="subject">
+			</p><br>
 									<input style="height:25%;width:80%;top:0px;margin-bottom:-20px;" type="text" 	name="message"  id="message">
-			<br>
+			</p><br>
 									<input type=submit value="Send"></input>
 							</form>
                    </section>

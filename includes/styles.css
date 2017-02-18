@@ -204,6 +204,7 @@ select {
 	height: 34px;
 	width: 240px;
 }
+
 form p label {
 	position: absolute;
 }
@@ -258,12 +259,12 @@ form p select {
 	display: block;
 }
 
-#friendsList {
+#friendsList,#form1{
 	font-size: 25px;
 }
 /* register page */
 
-#registerForm input[type=submit] {
+#registerForm input[type=submit],#contactForm input[type=submit]{
 	display: block;
 	border: none;
 	border-radius: 5px;
@@ -277,16 +278,16 @@ form p select {
 	transition: background linear 0.4s;
 }
 
-#registerForm input[type=submit]:hover {
+#registerForm input[type=submit]:hover ,#contactForm input[type=submit]:hover{
 	transition: background linear 0.4s;
 	background: #6C4C40;
 }
 
-#registerForm input[type=text] {
+#registerForm input[type=text],#contactForm input[type=text] {
 	border-radius: 1px;
 }
 
-#registerForm input[type=password] {
+#registerForm input[type=password]{
 	border-radius: 1px;
 }
 
