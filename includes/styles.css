@@ -1,105 +1,105 @@
 @font-face {
-    font-family: simplicity;
-    src: url('../includes/simplicity.ttf');
+	font-family: simplicity;
+	src: url('../includes/simplicity.ttf');
 }
 
-*{
-    margin:0 auto;
-    text-align:center;
-    font-family: simplicity;
-    color:#4d2200;
+* {
+	margin: 0 auto;
+	text-align: center;
+	font-family: simplicity;
+	color: #4d2200;
 }
 
-a{
-    color:#4d2200;
-	text-decoration:none;
+a {
+	color: #4d2200;
+	text-decoration: none;
 }
 
-a:hover{
+a:hover {
 	text-decoration: underline;
 }
 
-html,body {
-	margin:0 auto;
-	padding:0;
+html, body {
+	margin: 0 auto;
+	padding: 0;
 	height: 98.93%;
 }
 
-.wrapper{
-	max-width:1000px;
-	min-height:100%;
-	position:relative;
+.wrapper {
+	max-width: 1000px;
+	min-height: 100%;
+	position: relative;
 }
 
-.wrapper > main > a > button:hover{
+.wrapper > main > a > button:hover {
 	transition: background linear 0.4s;
-    background: #fafafa;
+	background: #fafafa;
 }
 
 /* header */
-header{ 
-	max-width:1000px;
-	height:150px;
-	padding-top:1%;
-	position:fixed;
-	top:0;
-	bottom:0;
+header {
+	max-width: 1000px;
+	height: 150px;
+	padding-top: 1%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
 }
 
-.headSection{
-	width:1000px;
-	height:150px;
-	position:absolute;
-    top:0;
-    background-color:white;
+.headSection {
+	width: 1000px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	background-color: white;
 }
 
-#logo{
-	width:250px;
-	position:absolute;
-	display:block;
-	left:0;
-	top:10px;
+#logo {
+	width: 250px;
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 10px;
 }
 
-#face{
-	position:absolute;
-	display:block;
-	height:50px;
-	width:50px;	
-	right:155px;
+#face {
+	position: absolute;
+	display: block;
+	height: 50px;
+	width: 50px;
+	right: 155px;
 	border-radius: 50%;
-	right:50px;
-	top:10px;
+	right: 50px;
+	top: 10px;
 }
 
-.miniLogin{
-	width:200px;
-	position:absolute;
-	display:block;
-	padding:0 5px;
-	right:40px;
-	font-size:20px;
-	top:10px;
+.miniLogin {
+	width: 200px;
+	position: absolute;
+	display: block;
+	padding: 0 5px;
+	right: 40px;
+	font-size: 20px;
+	top: 10px;
 }
 
 /*Header - flyMenu*/
-#cpBtn{
-	position:absolute;
+#cpBtn {
+	position: absolute;
 	right: 20px;
 	width: 20px;
 	height: 25px;
 	padding: 10px 10px;
 	cursor: pointer;
 	transition: border 0.3s linear 0s;
-	right:0;
-	top:10px;
+	right: 0;
+	top: 10px;
 }
 
-#cpBtn:hover div{
+#cpBtn:hover div {
 	background: #06F;
 }
-#cpBtn > div{
+#cpBtn > div {
 	width: 30px;
 	height: 5px;
 	background: #4D2200;
@@ -107,9 +107,9 @@ header{
 	border-radius: 4px;
 	transition: background 0.3s linear 0s;
 }
-#cp{
+#cp {
 	position: absolute;
-	right:0;
+	right: 0;
 	top: 50px;
 	width: 260px;
 	height: 400px;
@@ -119,170 +119,167 @@ header{
 	cursor: pointer;
 }
 /* nav */
-	
-nav{
-	left:0;
-	padding-top:60px;
+
+nav {
+	left: 0;
+	padding-top: 60px;
 }
 
-nav ul li{
+nav ul li {
 	list-style-type: none;
-	padding:20px 32px;
-	display:inline-block;
-
+	padding: 20px 32px;
+	display: inline-block;
 }
 
-nav ul li a{
-	font-size:29px;
+nav ul li a {
+	font-size: 29px;
 }
 
-.currentPage{
+.currentPage {
 	text-decoration: underline;
-	
 }
 
 /* menu */
-main{
-	height:100%;
-	padding-bottom:16px;
-	padding-top:152px;
+main {
+	height: 100%;
+	padding-bottom: 16px;
+	padding-top: 152px;
 }
 
-main p{
-	text-align:left;
-	padding:5px;
-	font-size:30px;
+main p {
+	text-align: left;
+	padding: 5px;
+	font-size: 30px;
 }
 
-main button{
-	width:270px;
-	height:50px;
+main button {
+	width: 270px;
+	height: 50px;
 }
 
-main button p{
-	font-size:35px;
+main button p {
+	font-size: 35px;
 }
 
-h1{
-	height:83px;
-	font-size:80px;
+h1 {
+	height: 83px;
+	font-size: 80px;
 	border-bottom: 1px solid black;
 }
 
-h2{
-	height:83px;
-	font-size:80px;
+h2 {
+	height: 83px;
+	font-size: 80px;
 	border-bottom: 1px solid black;
 }
 
-section{
-	padding:1%;
+section {
+	padding: 1%;
 }
 
-fieldset{
+fieldset {
 	padding-top: 5%;
 }
 
-footer{
-	height:16px;
-	padding:2px 0;
-	width:100%;
-	font:15px;
-	color:white;
-  	position:absolute;
-  	background:#4D2200;
+footer {
+	height: 16px;
+	padding: 2px 0;
+	width: 100%;
+	font: 15px;
+	color: white;
+	position: absolute;
+	background: #4D2200;
 }
 
-legend{
-	font-size:30px;
-	padding-top:5px;
+legend {
+	font-size: 30px;
+	padding-top: 5px;
 }
 
-select{
-	display: inline-block; //not in inlineblock
+select {
+	display: inline-block;//not in inlineblock
 	border: 1px solid #ccc;
 	font-size: 16px;
 	font-weight: bold;
 	height: 34px;
 	width: 240px;
 }
-form p label{
+form p label {
 	position: absolute;
 }
 
-form p input{
+form p input {
 	margin-left: 9em;
 }
 
-
-form p select{
+form p select {
 	margin-left: 4em;
 }
 
-#login,#newEventName,#settings{
-	font-size:25px;
+#login, #newEventName, #settings {
+	font-size: 25px;
 	display: inline-block;
 }
 
-#login input,#newEventName input,#settings input{
-	font-size:25px;
-	height:30px;
-	width:250px;
+#login input, #newEventName input, #settings input {
+	font-size: 25px;
+	height: 30px;
+	width: 250px;
 }
 
-.submit{
-	width:36px;
-	height:55px;
-	background-color:transparent;
-    background-image:url('../images/submit.png');
-    background-repeat: no-repeat;
-    display:inline;
-    border: none;
+.submit {
+	width: 36px;
+	height: 55px;
+	background-color: transparent;
+	background-image: url('../images/submit.png');
+	background-repeat: no-repeat;
+	display: inline;
+	border: none;
 }
 
-.submit:hover{
-	background-image:url('../images/submit.gif');
+.submit:hover {
+	background-image: url('../images/submit.gif');
 }
 
-#newEventType{
-	margin:0 auto;
-	padding-bottom:20px;
-	font-size:26px;
+#newEventType {
+	margin: 0 auto;
+	padding-bottom: 20px;
+	font-size: 26px;
 }
 
-#Invitation{
-	font:32px;
-	width:800px;
-	height:200px;	
+#Invitation {
+	font: 32px;
+	width: 800px;
+	height: 200px;
 }
 
-#myInvitations{
-	position:relative;
-	display:block;
+#myInvitations {
+	position: relative;
+	display: block;
 }
 
-#friendsList{
+#friendsList {
 	font-size: 25px;
 }
 /* register page */
 
-#registerForm input[type=submit]{
-        display: block;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        box-shadow: 3px 5px 12px 3px rgba(0, 0, 0, 0.25);
-        color: white;
-        font-size: 20px;
-        background: #795548;
-        width: 487px;
-        height: 40px;
-        transition: background linear 0.4s;
+#registerForm input[type=submit] {
+	display: block;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 3px 5px 12px 3px rgba(0, 0, 0, 0.25);
+	color: white;
+	font-size: 20px;
+	background: #795548;
+	width: 487px;
+	height: 40px;
+	transition: background linear 0.4s;
 }
 
-#registerForm input[type=submit]:hover{
-	    transition: background linear 0.4s;
-        background: #6C4C40;	
+#registerForm input[type=submit]:hover {
+	transition: background linear 0.4s;
+	background: #6C4C40;
 }
 
 #registerForm input[type=text] {
@@ -298,103 +295,127 @@ form p select{
 	padding-left: 2.2em;
 }
 
-#shopping a img{
-	width:300px;
+#shopping a img {
+	width: 300px;
 }
 
-.redStar{
-	color:#FF0000;
+#shopping a img:hover{
+	transition:0.4s;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
-.error{
-    font-size:20px;
-    color:#ce3333;
-    text-align:center;
+.redStar {
+	color: #FF0000;
+}
+
+.error {
+	font-size: 20px;
+	color: #ce3333;
+	text-align: center;
 }
 
 /* shoppping modal*/
 
-.myBtn{
-	width:50px;
+.myBtn {
+	width: 50px;
 }
-.myBtn:hover{
+.myBtn:hover {
 	transition: background linear 0.4s;
-    background: #fafafa;
+	background: #fafafa;
 }
-
-
 
 /* The Modal (background) */
 .Mmodal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-   	z-index:1;
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 #close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
-#close:hover,#close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+#close:hover, #close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 /* Responsivity */
 
-
-@media only screen and (min-width:480px) and (max-width:980px) {
+@media only screen and (min-width: 480px) and (max-width: 980px) {
 }
-@media only screen  and (max-width:480px) {
-	nav{
-		diplay:none;
+@media only screen and (max-width: 480px) {
+	nav {
+		diplay: none;
 	}
 }
 
- @viewport {
-	width:980px;
-	zoom:1.5;
+@viewport {
+width:980px;
+zoom:1.5;
 }
 @viewport {
-	width:480px;
-	zoom:2;
+width:480px;
+zoom:2;
 }
-	
+
 /* Table */
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-size:26px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-size:26px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-2bn0{font-size:26px;text-align:center;vertical-align:top}
+.tg {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.tg td {
+	font-size: 26px;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+}
+.tg th {
+	font-size: 26px;
+	font-weight: normal;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 1px;
+	overflow: hidden;
+	word-break: normal;
+}
+.tg .tg-2bn0 {
+	font-size: 26px;
+	text-align: center;
+	vertical-align: top
+}
 
 /* Time and Date*/
-.container{
-	width:400px;
+.container {
+	width: 400px;
 }
 
-/* Personal message*/ 
-.form-control{
-	font-size:30px;
-	text-align:center;
+/* Personal message*/
+.form-control {
+	font-size: 30px;
+	text-align: center;
 }
 

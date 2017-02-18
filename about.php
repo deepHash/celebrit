@@ -25,6 +25,34 @@
                			<p>Igal Tsesis - itsesisx@gmail.com</p>
                    </section>
                    
+                   <section id="contact">
+                   		<h2></h2>Contact Us</h2>
+                   		<p>CELEBRIT is always improving - give us your tips and advice</p>
+                   		
+                   			<form method="post" action="mailer.php" name="mail" id="form1">
+									Your Name:
+									<input  id="field" type="text" 	name="name"  id="name" 	placeholder="name" value="name">
+									Email:
+									<input id="field" type="text" 	name="email"  id="email" 	placeholder="mail" value="mail">
+			<br>
+									Please choose a topic for the message:
+									<select id="field" name="issue" form="form1">
+			<br>
+										<option name="issue" id="issue" value="an Error">			Error		</option>
+										<option name="issue" id="issue" value="a Malfunction">		Malfunction	</option>
+										<option name="issue" id="issue" value="an Advice">			Advice		</option>
+										<option name="issue" id="issue" value="a Tip">				a Tip		</option>
+										<option name="issue" id="issue" value="a Thank you note">	Thank you	</option>
+									</select>
+			<br>					
+									Your message:
+									<input id="field" type="text" 	name="subject"  id="subject" 	placeholder="נושא" value="נושא">
+			<br>
+									<input style="height:25%;width:80%;top:0px;margin-bottom:-20px;" type="text" 	name="message"  id="message">
+			<br>
+									<input type=submit value="Send"></input>
+							</form>
+                   </section>
                </article>
            </main>
            
