@@ -41,7 +41,7 @@
 										echo "<td class='tg-2bn0'>".$row['guests']."</td>";
 										echo "<td class='tg-2bn0'>".$row['location']."</td>";
 										echo "<td class='tg-2bn0'>".$row['date']."</td>";
-										echo "<td class='tg-2bn0'><a class='popup-with-form' href='http://www.shufersal.co.il/Pages/Catalog.aspx'><img src='images/shop.png'></img></a></td>";
+										echo "<td class='tg-2bn0'><button class='myBtn'><img src='images/shop.png'></img></button></td></td>";
 										echo "</tr>";
 								}//end loop
 									
@@ -52,6 +52,21 @@
 					</table>
                    </section>
                </article>
+							<div id="myModal" class="Mmodal">
+								<div class="modal-content">
+									<span id="close">&times;</span><p>Your Shopping List:</p>
+									<table class="tg">
+					  					<tr>
+					    					<th>Guest</th>
+					    					<th>Shop</th>
+					    				</tr>
+					    				<tr>
+					    					<td>Mor</td>
+					    					<td>Wine</td>
+					    				</tr>
+					    		</table>
+								</div>	
+							</div>
                
                <a href="newEvent.php"><button><p>Create New Event</p></button></a>
            </main>

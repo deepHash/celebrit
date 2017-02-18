@@ -6,7 +6,7 @@
 	//selectBox
 	$sql = "SELECT * FROM tbl_event_224 WHERE user_id = '$id_session' ";
 	$result = mysqli_query($con, $sql);
-	$rightPass = mysqli_num_rows($result);
+	
 
 	
 	//check for submission
@@ -22,9 +22,10 @@
 		//password value
 		$sql = "SELECT * FROM tbl_user_224 WHERE id = '$id_session' AND password = '".md5($mypassword)."'";
 		$password_result = mysqli_query($con, $sql);
+		$rightPass = mysqli_num_rows($password_result);
 			 
 		//name can contain only alphabet characters
-		if (!preg_match("/^[a-zA-Z ]+$/",$first_name)) {
+		if (!preg_match("/^[a-zA-Z ]+$/",$first_name) && $first_name!="") {
 			$error = true;
 			$firstName_error = "Name must contain only alphabet characters";
 		}
@@ -60,9 +61,9 @@
 		    	$sql = "INSERT INTO tbl_users_224(username,first_name,last_name,password) VALUES('" . $email . "', '" . $first_name . "', '" . $last_name . "', '" . md5($password) . "')";	
 		    }
 		    if(mysqli_query($con, $sql)) {
-		        $successmsg = "Successfully Registered! <a href='index.php'>Click here to Login</a>";
+		        $successmsg = "Successfully changed the info";
 		    } else {
-		        $errormsg = "Error in registering...Please try again later!";
+		        $errormsg = "Error in changing...try again later please";
 		    }
 		 }
 	}	
@@ -72,12 +73,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-
+		<meta name="viewport" content="width=device-width,initial-scale=1">
         <title>CELEBRIT:My Settings</title>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" href="includes/styles.css">
+        <script type="text/javascript">var username = "<?= $user_check ?>";</script>
         <script src="includes/settings.js" type="text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="includes/scripts.js" type="text/javascript"></script> 
         <link rel="icon" type="image/ico" href="images/favicon.ico">
     </head>
     <body>
@@ -87,46 +89,52 @@
                <section id="settings">
                <fieldset>
                	<legend>Edit your personal Info</legend>               	
-               	<form action="" method="POST" enctype="multipart/form-data">
+               	<form id="changeInfo" action="" method="POST" enctype="multipart/form-data">
                		<p>
                			<label>First Name:</label>
                			<input type="text" name="first_name"/>
+               			<span class="error"><? if (isset($firstName_error)) echo $firstName_error; ?></span>
                		</p>
                		<p>
                			<label>Last Name:</label>
                			<input type="text" name="first_name"/>
+               			<span class="error"><? if (isset($lastName_error)) echo $lastName_error; ?></span>
                		</p>
                		<p>
                			<label>Email:</label>
                			<input type="text" name="first_name"/>
+               			<span class="error"><? if (isset($email_error)) echo $email_error; ?></span>
                		</p>
                		<p>
                			<label>Current Password:</label>
                			<input type="password" name="opassword"/>
+               			<span class="error"><? if (isset($opassword_error)) echo $opassword_error; ?></span>	
                		</p>    
                		<p>
                			<label>New Password:</label>
                			<input type="password" name="npassword"/>
+               			<span class="error"><? if (isset($password_error)) echo $password_error; ?></span>	
                		</p> 
                		<p>
                			<label>Confirm Password:</label>
                			<input type="password" name="cpassword"/>
+               			<span class="error"><? if (isset($cpassword_error)) echo $cpassword_error; ?></span>
                		</p>
                		<p>
                			<label>Profile Picture</label>
 						<input type="file" name="file" title=" "/>
+						<span class="error"><? if (isset($picture_error)) echo $picture_error; ?></span>
                		</p>
                		<br>
-					<button type="submit" name="personal" class="submit" ></button>                		               		        
+					<input type="submit" name="personal" value="Update"></input>            		               		        
                	</form>
                	
                </fieldset>
                <fieldset>
                	<legend>Edit your Preferences</legend> 
-               	<form action="" method="post" enctype="multipart/form-data">
+               	<form id="changePreference" action="" method="post" enctype="multipart/form-data">
                		<p>
                			<label>Specific Event</label>
-               			<br>
                			<!--write updateCheckBox function to select the type option and update the checkboxes -->
                			<select name="eventType" id="eventType" onchange="return updateCheckBox();"> 
                				<?php while($row = mysqli_fetch_array($result)):;?>
@@ -136,20 +144,17 @@
                		</p>
                		<p>
                			<label>Shopping</label>
-               			<input type="checkbox" name="shopping"/>
+               			<input type="checkbox" id="shopping"/>
                		</p>
                		<p>
                			<label>Coupons</label>
-               			<input type="checkbox" name="coupons" />
+               			<input type="checkbox" id="coupons" />
                		</p>
                		<br>
-               		<button type="submit" name="custom" class="submit"></button>
+               		<input type="submit" name="preference" value="Update"></input>
                	</form>
                </fieldset>
-               <fieldset>
-               	<legend>Friends</legend>
-               	<div id="friendsList"></div>
-               </fieldset>
+
               </section>
            </main>
            
@@ -167,7 +172,7 @@
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
            		
-           	<div id="cpBtn" onclick="toggleCP()">
+           	<div id="cpBtn">
   				<div></div>
   				<div></div>
   				<div></div>

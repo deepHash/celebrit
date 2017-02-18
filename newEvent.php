@@ -5,13 +5,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    	
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>CELEBRIT:New Event</title>
 		<script src="includes/scripts.js"></script>
    		<link rel="stylesheet" href="includes/styles.css">
    		<link rel="icon" type="image/ico" href="images/favicon.ico">
-   		
     </head>
 
      <body>
@@ -108,9 +107,9 @@ Bring snacks and drinks!
            	<div class="headSection">     	         	
             <a href="events.php" ><img id="logo" src="images/Celebrit.gif" alt="celebrit logo"></img></a>
              <?php if($profile_session == NULL){
-						echo "<img id='face' src='images/profiles/default.png' alt='default profile'>";             	
+					echo "<img id='face' src='data/profiles/default.png' alt='default profile'>";             	
              		} else {
-             			echo "<img id='face' src='images/profiles/".$profile_session."' alt='profile picture'>";
+             			echo "<img id='face' src='data/profiles/".$profile_session."' alt='profile picture'>";
              		}
 			 ?>		 
             	<section class="miniLogin">
@@ -118,7 +117,7 @@ Bring snacks and drinks!
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
            		
-           	<div id="cpBtn" onclick="toggleCP()">
+           	<div id="cpBtn">
   				<div></div>
   				<div></div>
   				<div></div>

@@ -9,6 +9,7 @@
         <title>CELEBRIT:My Invitations</title>
         <link rel="stylesheet" href="includes/styles.css">
         <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <script src="includes/scripts.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -31,26 +32,40 @@
 					    <td class="tg-2bn0">3</td>
 					    <td class="tg-2bn0">Your House</td>
 					    <td class="tg-2bn0">18:00</td>
-					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					    <td class="tg-2bn0"><button class="myBtn"><img src="images/shop.png"></img></button></td>
 					  </tr>
 					  <tr>
 					    <td class="tg-2bn0">Outdoor Party</td>
 					    <td class="tg-2bn0">4</td>
 					    <td class="tg-2bn0">Yarkon</td>
 					    <td class="tg-2bn0">19:30</td>
-					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					    <td class="tg-2bn0"><button class="myBtn"><img src="images/shop.png"></img></button></td>
 					  </tr>
 					  <tr>
 					    <td class="tg-2bn0">Disco Party</td>
 					    <td class="tg-2bn0">10</td>
 					    <td class="tg-2bn0">Moses</td>
 					    <td class="tg-2bn0">21:00</td>
-					    <td class="tg-2bn0"><a class="popup-with-form" href="http://www.shufersal.co.il/Pages/Catalog.aspx"><img src="images/shop.png"></img></a></td>
+					    <td class="tg-2bn0"><button class="myBtn"><img src="images/shop.png"></img></button></td>
 					  </tr>
 					</table>
                    </section>
-                   
                </article>
+               				<div id="myModal" class="Mmodal">
+								<div class="modal-content">
+									<span id="close">&times;</span><p>Your Shopping List:</p>
+									<table class="tg">
+					  					<tr>
+					    					<th>Guest</th>
+					    					<th>Shop</th>
+					    				</tr>
+					    				<tr>
+					    					<td>Mor</td>
+					    					<td>Wine</td>
+					    				</tr>
+					    		</table>
+								</div>	
+							</div>
            </main>
            
            <header>
