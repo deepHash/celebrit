@@ -365,20 +365,22 @@ form p select{
 
 
 @media only screen and (min-width:480px) and (max-width:980px) {
-    @viewport {
-	width:980px;
-	zoom:1.5;
-	}
-
 }
 @media only screen  and (max-width:480px) {
-	@viewport {
+	nav{
+		diplay:none;
+	}
+}
+
+ @viewport {
+	width:980px;
+	zoom:1.5;
+}
+@viewport {
 	width:480px;
 	zoom:2;
 }
-
-}
-
+	
 /* Table */
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-size:26px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}

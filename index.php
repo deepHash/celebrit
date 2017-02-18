@@ -52,7 +52,7 @@
            				<p><a href="index.php"> Login </a></p>
            		</section>
            	
-           	<div id="cpBtn" onclick="toggleCP()">
+           	<div id="cpBtn">
   				<div></div>
   				<div></div>
   				<div></div>

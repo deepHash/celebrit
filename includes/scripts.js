@@ -2,10 +2,12 @@ window.onload = function(){
     // your code 
 
 // flyMenu toggle
-function toggleCP(){
+var myBtn = document.getElementById("cpBtn");
+ 
+myBtn.onclick = function toggleCP(){
 	var cp = document.getElementById("cp");
 	cp.style.display = cp.style.display === 'block' ? 'none' : 'block';
-}
+};
 
 
 // modal:
@@ -29,14 +31,14 @@ for (i = 0; i < btn.length; i++) {
 
 
 // When the user clicks on <span> (x), close the modal
+if (span !== null){
 span.onclick = function() {
     modal.style.display = "none";
-};
+};};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     };
-};
-};
+};};

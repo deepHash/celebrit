@@ -40,7 +40,7 @@
            				<p><a href="logout.php"> Logout </a></p>
            		</section>
            		
-           	<div id="cpBtn" onclick="toggleCP()">
+           	<div id="cpBtn">
   				    <div></div>
   				    <div></div>
   			    	<div></div>
