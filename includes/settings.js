@@ -10,7 +10,7 @@
 // };
 
 $(document).ready(function(){
-	 	var $friends = $('#friendsList');
+	 	var $friends = $('#newEventGuests');
 	 	var $name = $('#name');
 	 	var $email = $('#email');
 	 	$.ajax({
@@ -21,34 +21,7 @@ $(document).ready(function(){
 				 $friends.append('<li>' + item.name + ' - ' + item.email + '</li>');
 			   });
 			 }
- 		});
- 		
- 		$('#addFriend').on('click', function () {
-		   	var friend = 
-		   	{
-		   		name: $name.val(), 
-		   		email: $email.val()
-		   	};
-		   	
-		   	JSON.parse(friend);
-		   	console.log("onclick fun");
-		   	// var ajax = new XMLHttpRequest();
-			// ajax.open('post', 'json.php');
-			// ajax.setRequestHeader("Content-type", "application/json;charset=UTF-8");
-			// ajax.send(JSON.stringify(friend));
-		   	
-			 $.ajax({
-			 	url: "json.php",
-			 	type: "POST",
-			 	dataType: "json",
-			 	contentType: "application/json",
-			 	data: {json: json},
-			 	success: function (newFriend) {
-				   $friends.append('<li>' + newFriend.name + ' - ' + newFriend.email + '</li>');
-				   console.log("debug");
-				 }
-			 });
-		});		 
+ 		}); 
 });
 
 

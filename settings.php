@@ -73,11 +73,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-<<<<<<< HEAD
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-=======
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
->>>>>>> 4985c82743170e7a831e9cddfdee3e5916b967f9
         <title>CELEBRIT:My Settings</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" href="includes/styles.css">

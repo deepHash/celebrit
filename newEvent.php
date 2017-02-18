@@ -8,6 +8,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>CELEBRIT:New Event</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">var username = "<?= $user_check ?>";</script>
 		<script src="includes/scripts.js"></script>
    		<link rel="stylesheet" href="includes/styles.css">
    		<link rel="icon" type="image/ico" href="images/favicon.ico">
@@ -39,16 +41,11 @@
   							<li><a href="#"> 	VIP			</a></li>
                    </section>
 
-<h2>Guests</h2>
-                   <section id="newEventGuests">
-                   	  		<li class="active"><a href="#"> Group </a></li>
-  							<li><a href="#">Friends 	</a></li>
-  							<li><a href="#">Family		</a></li>
-  							<li><a href="#">Coworkers	</a></li>
-  							<li><a href="#"> other 1	</a></li>
-  							<li><a href="#"> other 2	</a></li>
+					<h2>Guests</h2>
+                   <section >
+                   	  	<ul id="newEventGuests"></ul>	
                    </section>
-<h2>Location</h2>
+					<h2>Location</h2>
                    <section id="newEventMap">
                    	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.834005752797!2d34.80970861562072!3d32.10077168118139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4bf40ab4383d%3A0xff5dd29c8016355f!2sHayarkon+Park!5e0!3m2!1sen!2sus!4v1484274761372" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></section>
 

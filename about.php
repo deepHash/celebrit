@@ -39,15 +39,15 @@
                    		
                    			<form method="post" action="mailer.php" name="mail" id="contactForm">
 									<p><label>Your Name:</label>
-									<input  id="field" type="text" 	name="name" value="<?php if ($error) echo $first_name; ?>">
+									<input type="text" name="name" value="<?php if ($error) echo $first_name; ?>">
 									<span class="error"><? if (isset($firstName_error)) echo $firstName_error; ?></span>
 			</p><br>
 									<p><label>Email:</label></p>
-									<input id="field" type="text" name="email" value="<?php if ($error) echo $email; ?>">
+									<input type="text" name="email" value="<?php if ($error) echo $email; ?>">
 									<span class="error"><? if (isset($email_error)) echo $email_error; ?></span>	
 			</p><br>
 									<p><label>Issue Type:</label>					
-									<select id="field" name="issue" form="contactForm">
+									<select name="issue" form="contactForm">
 										<option name="issue" id="issue" value="an Error">			Error		</option>
 										<option name="issue" id="issue" value="a Malfunction">		Malfunction	</option>
 										<option name="issue" id="issue" value="an Advice">			Advice		</option>

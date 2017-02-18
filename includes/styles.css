@@ -212,9 +212,10 @@ form p label {
 	position: absolute;
 }
 
-form p input {
+form p input, #contactForm p input {
 	margin-left: 9em;
 }
+	
 
 form p select {
 <<<<<<< HEAD
